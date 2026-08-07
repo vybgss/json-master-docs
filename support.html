@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JSON Master — Support</title>
+  <style>
+    :root {
+      /* The app's palette (RetroPalette), kept identical here. */
+      --void: #14110c;
+      --panel: #1c1811;
+      --raised: #272016;
+      --edge: #3a2f1e;
+      --text: #efe0c0;
+      --dim: #9a8863;
+      --amber: #ffb000;
+      --key: #ffc24d;
+      color-scheme: dark;
+    }
+
+    body {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+        "Liberation Mono", monospace;
+      background: var(--void);
+      color: var(--text);
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.65;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 4px;
+    }
+
+    .logo img {
+      width: 132px;
+      height: 132px;
+      border-radius: 24px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.35rem;
+      letter-spacing: 0.02em;
+      margin: 0 0 8px;
+    }
+
+    h1::after {
+      content: "\258C";
+      color: var(--amber);
+      animation: blink 1.1s steps(1) infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      h1::after {
+        animation: none;
+      }
+    }
+
+    .top-text {
+      text-align: center;
+      color: var(--dim);
+      margin-bottom: 40px;
+      font-size: 0.85rem;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--edge);
+      border-radius: 10px;
+      padding: 4px 22px 16px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 0.95rem;
+      color: var(--amber);
+      margin: 16px 0 6px;
+      letter-spacing: 0.01em;
+    }
+
+    p {
+      margin: 8px 0;
+      font-size: 0.88rem;
+    }
+
+    a {
+      color: var(--amber);
+      text-underline-offset: 3px;
+    }
+
+    code {
+      background: var(--raised);
+      border: 1px solid var(--edge);
+      border-radius: 4px;
+      padding: 0 5px;
+      color: var(--key);
+      font-size: 0.92em;
+    }
+
+    .footer-note {
+      text-align: center;
+      color: var(--dim);
+      font-size: 0.8rem;
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--edge);
+    }
+
+    @media (max-width: 480px) {
+      body {
+        margin: 24px auto;
+      }
+
+      .card {
+        padding: 4px 18px 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="logo"><img src="logo.png" alt="JSON Master app icon" /></div>
+  <h1>JSON Master — Support</h1>
+  <p class="top-text">
+    A native JSON viewer and editor for iPhone, iPad and Mac.<br />
+    Answers to common questions are below.
+  </p>
+
+  <div class="card">
+    <h2>What is JSON Master?</h2>
+    <p>
+      An editor for JSON documents, built around the things you actually do all day
+      with JSON: find the value, copy its path, copy the branch, and work out what a
+      field really contains. Everything you open and save is an ordinary
+      <code>.json</code> file — there is no project format and nothing to import. The
+      app is written natively for Apple platforms: there is no web view inside it, and
+      it needs no account and no internet connection.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Tree, source, or both?</h2>
+    <p>
+      The document is shown two ways, and both are the same file. The <strong>tree</strong>
+      is for reading and restructuring, the <strong>source</strong> for fixing what does
+      not parse, and <strong>split</strong> shows them side by side. On Mac the three
+      sit in the segmented control at the left of the toolbar; on iPhone and iPad they
+      are at the top of the <strong>"…"</strong> menu. Split needs width, so it is
+      offered on Mac and iPad but not on iPhone.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>How do I copy a path?</h2>
+    <p>
+      Select a node and the inspector shows its path in every notation at once — dot,
+      JSONPath, brackets, jq, Swift subscript and JSON Pointer — each with its own copy
+      button. If you always want the same one, set it as <strong>Path notation</strong>
+      in Settings: then <strong>Copy path</strong> in a row's menu is a single tap, and
+      <strong>Copy path as</strong> still offers the rest.
+    </p>
+    <p>
+      A row's menu is a right-click on Mac and a long press on iPhone and iPad.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>How do I copy a value, or a whole branch?</h2>
+    <p>
+      <strong>Copy value</strong> in the row's menu. On an object or an array the same
+      command copies the entire subtree, formatted, and <strong>Copy minified</strong>
+      copies it on one line. There is also <strong>Copy key</strong>, and
+      <strong>Copy key and value</strong>, which gives you the pair ready to paste into
+      a neighbouring object.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Why did my copied string lose its quotes?</h2>
+    <p>
+      Because a copied id usually goes straight into a request, where the quotes are
+      always in the way. If you would rather have the JSON literal, turn off
+      <strong>Copy strings without quotes</strong> in Settings.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Where are the document tools?</h2>
+    <p>
+      In the <strong>"…"</strong> menu in the toolbar. Its <strong>Document</strong>
+      section holds Format, Minify, Sort keys, Expand embedded JSON, Remove empty
+      values and Remove duplicate keys — plus <strong>Convert JSON Lines into an
+      array</strong>, which appears only when the text actually is JSON Lines.
+    </p>
+    <p>
+      <strong>Tools</strong> holds Query, Summary, Compare, Generate types and Decode a
+      token; on Mac they have their own toolbar button, on iPhone and iPad they are a
+      section of the same <strong>"…"</strong> menu.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>My file won't parse. Now what?</h2>
+    <p>
+      It still opens — that is usually why you opened an editor at all. The status bar
+      at the bottom reports the problem with a line and a column, and tapping it jumps
+      to that spot in the source. Syntax colouring keeps working on a broken document,
+      which is exactly when it helps most: a string that stays green past where it
+      should have ended shows you the missing quote.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>What do the "1/2" marks in the tree mean?</h2>
+    <p>
+      Duplicate keys. JSON permits the same key twice in one object and most parsers
+      quietly keep one of them; here every occurrence gets its own row, marked with its
+      number — <code>1/2</code>, <code>2/2</code> — so you can see which value is which.
+      An object that contains duplicates is marked as well, so you notice them without
+      expanding it, and the inspector explains the finding for the selected key.
+    </p>
+    <p>
+      To resolve them, use <strong>Remove duplicate keys</strong> in the
+      <strong>"…"</strong> menu; it keeps the last occurrence, which is what most
+      parsers would have given you.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>What is the inspector telling me about a value?</h2>
+    <p>
+      It recognises what the value really is and says so next to it: Unix timestamps
+      become a readable date, JWT tokens are decoded with their expiry checked, base64
+      is decoded when the result is readable text, and ISO 8601 dates and URLs are named
+      as such. It also shows string length in characters and bytes, and flags integers
+      beyond 2<sup>53</sup> — the usual reason an id breaks in JavaScript.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Is a JWT signature verified?</h2>
+    <p>
+      No. The token is decoded so you can read its header and payload; verifying the
+      signature would need the issuer's key, so the app does not pretend to do it, and
+      says so on screen. Decoding happens on your device, and nothing is sent anywhere.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>How does search work?</h2>
+    <p>
+      Cmd+F on Mac, the magnifier in the toolbar on iPhone and iPad. You can search
+      keys, values or both, with case sensitivity and whole-value matching. Branches
+      that contain a match expand themselves and everything else is hidden, so the
+      result is a tree of just the matches and the path to them. Closing the search
+      brings the whole document back.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>A three-thousand-line response. How do I see one part of it?</h2>
+    <p>
+      <strong>Show only this branch</strong> in the row's menu narrows the tree to that
+      subtree until you leave it. For the opposite problem — a document that opens too
+      far expanded, or not far enough — the <strong>Tree</strong> section of the
+      <strong>"…"</strong> menu has Expand all, Collapse all and Expand to level 1–6,
+      and Settings decides how many levels a document opens with.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Why did my formatting change after I edited in the tree?</h2>
+    <p>
+      Because the text is the source of truth and the tree is its parse. A file you have
+      not touched is saved back byte for byte — foreign indentation, key order and all.
+      But an edit made in the tree has to be written out again, and it is written with
+      your own indentation setting. That is a fair trade, and it is one undo step if you
+      want it back.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Can it read files with comments or trailing commas?</h2>
+    <p>
+      Yes — turn on <strong>Allow comments and trailing commas</strong> in Settings, and
+      single quotes and unquoted keys are accepted too. It is off by default on purpose:
+      a JSON editor should say plainly whether a file is valid JSON, and switching it on
+      is a deliberate choice made by someone working with <code>.jsonc</code> or with
+      fragments of a log.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Which files can it open?</h2>
+    <p>
+      <code>.json</code>, <code>.jsonc</code>, <code>.jsonl</code> and
+      <code>.ndjson</code>, and <code>.geojson</code>. A file opened as any of them is
+      saved back in place, so there is no forced "Save as".
+    </p>
+    <p>
+      On Mac, JSON Master registers itself as a handler for <code>.json</code>. If your
+      files still open in another app, select one in Finder, press Cmd+I, and under
+      <strong>Open with</strong> choose JSON Master and click <strong>Change All</strong>.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Where are my files stored?</h2>
+    <p>
+      Wherever you save them. JSON Master is a standard document-based app, so it uses
+      the system file picker: Files on iPhone and iPad, Finder on Mac, including iCloud
+      Drive and any other provider you have connected. On iPhone and iPad, the app's own
+      folder is under <strong>Browse → On My iPhone (or iPad) → JSON Master</strong>.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>How do I get the document out?</h2>
+    <p>
+      <strong>Export</strong> in the <strong>"…"</strong> menu writes formatted JSON,
+      minified JSON, or a CSV table; <strong>Copy document</strong> next to it puts the
+      whole text on the clipboard. CSV needs the document to be an array of objects —
+      nested objects become <code>address.city</code> columns and arrays stay as JSON in
+      the cell. If the shape is not a table, the app says so instead of inventing
+      columns.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Where is Settings, and what is in it?</h2>
+    <p>
+      On Mac it is Cmd+, or the JSON Master menu; on iPhone and iPad it is at the bottom
+      of the <strong>"…"</strong> menu. It holds the interface language, the default
+      path notation and unquoted copying, indentation, non-ASCII escaping and lenient
+      parsing, and the appearance switches: type icons, count badges, scanlines, font
+      size and how many levels a document opens with.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Which keyboard shortcuts are there?</h2>
+    <p>
+      Cmd+F for search, Cmd+Z and Shift+Cmd+Z for undo and redo, Shift+Cmd+I to format
+      the document, and Cmd+, for Settings on Mac. They work on iPad with a hardware
+      keyboard too.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Why is the app always dark?</h2>
+    <p>
+      The amber palette is the app's identity rather than a preference, so it ignores
+      the system theme; a light variant is impossible by design, because amber on white
+      is unreadable. What you can change is the rest of the look: the
+      <strong>Scanlines</strong> overlay is there if you want the full screen effect —
+      off by default, since it costs a little text contrast — and the monospaced type
+      scales from 9 to 22 points.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Can I change the language?</h2>
+    <p>
+      Yes. The app is available in English, German, French, Ukrainian, Spanish, Japanese
+      and Portuguese. By default it follows your device language (falling back to
+      English); you can change it any time in Settings, and it applies immediately
+      without a restart.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Does it need an internet connection?</h2>
+    <p>
+      No. The app works entirely offline and makes no network requests at all.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>System requirements</h2>
+    <p>
+      iPhone or iPad with iOS or iPadOS 18 or later, or a Mac with macOS 15 or later.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Contact &amp; feedback</h2>
+    <p>
+      Didn't find your answer, found a document that behaves oddly, or want a tool the
+      app doesn't have yet? Write to us — we read everything, and a sample
+      <code>.json</code> file attached to your message helps enormously.<br />
+      <strong>Email:</strong>
+      <a href="mailto:volodymyr.sichka@gmail.com">volodymyr.sichka@gmail.com</a>
+    </p>
+  </div>
+
+  <p class="footer-note">
+    Every document starts with a single brace.
+  </p>
+</body>
+
+</html>
