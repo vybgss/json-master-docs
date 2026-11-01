@@ -4,237 +4,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JSON Master — Privacy Policy</title>
-  <style>
-    :root {
-      /* The app's palette (RetroPalette), kept identical here. */
-      --void: #0c0b09;   /* matched to the logo's background */
-      --panel: #1c1811;
-      --raised: #272016;
-      --edge: #3a2f1e;
-      --text: #efe0c0;
-      --dim: #9a8863;
-      --amber: #ffb000;
-      --key: #ffc24d;
-      color-scheme: dark;
-    }
-
-    body {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
-        "Liberation Mono", monospace;
-      background: var(--void);
-      color: var(--text);
-      max-width: 720px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.65;
-      -webkit-text-size-adjust: 100%;
-    }
-
-    .logo {
-      text-align: center;
-      margin-bottom: 4px;
-    }
-
-    .logo img {
-      width: 132px;
-      height: 132px;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 1.35rem;
-      letter-spacing: 0.02em;
-      margin: 0 0 8px;
-    }
-
-    h1::after {
-      content: "\258C";
-      color: var(--amber);
-      animation: blink 1.1s steps(1) infinite;
-    }
-
-    @keyframes blink {
-      50% {
-        opacity: 0;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      h1::after {
-        animation: none;
-      }
-    }
-
-    .last-updated {
-      text-align: center;
-      color: var(--dim);
-      margin-bottom: 40px;
-      font-size: 0.8rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-
-    .card {
-      background: var(--panel);
-      border: 1px solid var(--edge);
-      border-radius: 10px;
-      padding: 4px 22px 16px;
-      margin-bottom: 20px;
-    }
-
-    h2 {
-      font-size: 0.95rem;
-      color: var(--amber);
-      margin: 16px 0 6px;
-      letter-spacing: 0.01em;
-    }
-
-    p {
-      margin: 8px 0;
-      font-size: 0.88rem;
-    }
-
-    a {
-      color: var(--amber);
-      text-underline-offset: 3px;
-    }
-
-    code {
-      background: var(--raised);
-      border: 1px solid var(--edge);
-      border-radius: 4px;
-      padding: 0 5px;
-      color: var(--key);
-      font-size: 0.92em;
-    }
-
-    .footer-note {
-      text-align: center;
-      color: var(--dim);
-      font-size: 0.8rem;
-      margin-top: 40px;
-      padding-top: 24px;
-      border-top: 1px solid var(--edge);
-    }
-
-    @media (max-width: 480px) {
-      body {
-        margin: 24px auto;
-      }
-
-      .card {
-        padding: 4px 18px 14px;
-      }
-    }
-  </style>
+  <title>Privacy Policy — JSON Master</title>
+  <meta name="description" content="JSON Master collects no data: no accounts, no analytics, no network requests. Your documents stay on your device." />
+  <meta name="theme-color" content="#0e1016" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="logo"><img src="logo.png" alt="JSON Master app icon" /></div>
-  <h1>JSON Master — Privacy Policy</h1>
-  <p class="last-updated">Last updated: August 7, 2026</p>
+  <header class="nav">
+    <a class="brand" href="marketing.html"><img src="logo.png" alt="" /><span>JSON Master</span></a>
+    <nav class="nav-links">
+      <a href="marketing.html">Overview</a>
+      <a href="support.html">Support</a>
+      <a href="privacy-policy.html" aria-current="page">Privacy</a>
+    </nav>
+  </header>
 
-  <div class="card">
-    <h2>The short version</h2>
-    <p>
-      <strong>JSON Master</strong> collects no data. There are no accounts, no
-      analytics, no ads, no third-party SDKs, and no servers of ours. Your documents
-      and your settings stay on your device and in storage you already control.
-    </p>
-  </div>
+  <main class="page">
+    <div class="page-head">
+      <img class="icon" src="logo.png" alt="JSON Master app icon" />
+      <h1>Privacy Policy</h1>
+      <p class="lead">JSON Master for iPhone, iPad, Mac and Apple Vision Pro.</p>
+      <p class="meta">Last updated: November 1, 2026</p>
+    </div>
 
-  <div class="card">
-    <h2>1. Your documents</h2>
-    <p>
-      Documents are ordinary <code>.json</code> files — along with
-      <code>.jsonc</code>, <code>.jsonl</code>, <code>.ndjson</code> and
-      <code>.geojson</code> — that you open and save through the system's own file
-      picker: Files on iPhone and iPad, Finder on Mac. The app reads and writes only
-      the file you have open, and only where you told it to. It never uploads a
-      document, never copies one elsewhere, and never scans your storage for other
-      files. The same is true of exports: formatted JSON, minified JSON and CSV are
-      written to the location you choose in the system save panel.
-    </p>
-    <p>
-      If you keep files in iCloud Drive, or in another provider you have connected in
-      Files, syncing is done by that service, not by us, and is governed by its own
-      privacy policy. The app itself performs no syncing.
-    </p>
-  </div>
+    <div class="card highlight">
+      <h2>The short version</h2>
+      <p>
+        <strong>JSON Master collects no data.</strong> There are no accounts, no analytics, no ads, no third-party SDKs and no servers of ours. The app makes no network requests. Your documents and your settings stay on your device and in storage you already control.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>2. What you paste into it</h2>
-    <p>
-      Everything you paste is processed on your device and nowhere else. Decoding a
-      token, comparing a document against the clipboard, running a query, generating
-      types — all of it happens locally, in the app's own code.
-    </p>
-    <p>
-      This matters most for tokens: the app splits a JWT and decodes its header and
-      payload so you can read them. It does <strong>not</strong> verify the signature,
-      and it does not contact any server to do so — the screen says as much while you
-      are looking at it. A token you paste stays in the document you pasted it into.
-    </p>
-  </div>
+    <div class="card">
+      <h2><span class="n">01</span>Your documents</h2>
+      <p>
+        Documents are ordinary files — <code>.json</code>, <code>.jsonc</code>, <code>.jsonl</code>, <code>.ndjson</code> and <code>.geojson</code> — that you open and save through the system's own file browser: Files on iPhone and iPad, Finder on Mac. The app reads and writes only the file you have open, and only where you told it to. It never uploads a document, never copies one elsewhere and never scans your storage for other files.
+      </p>
+      <p>
+        Exports — formatted JSON, minified JSON and CSV — are written to the location you choose in the system save panel. The sample document offered in Settings is written into the app's own folder, and only when you ask for it.
+      </p>
+      <p>
+        If you keep files in iCloud Drive or in another provider connected to Files, syncing is done by that service, not by us, and is governed by its own privacy policy. The app itself performs no syncing.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>3. Your settings</h2>
-    <p>
-      Your interface language, path notation, indentation, parsing and appearance
-      preferences are saved on your device in standard app preferences. They are
-      technical settings, they contain nothing personal, and they never leave the
-      device.
-    </p>
-  </div>
+    <div class="card">
+      <h2><span class="n">02</span>What you paste into it</h2>
+      <p>
+        The clipboard is read only when you paste — into a document, into the token decoder, or as the second document in Compare — and what you paste is processed on your device and nowhere else. Decoding a token, comparing documents, running a JSONPath query, repairing almost-JSON and generating Swift, TypeScript or JSON Schema types all happen locally, in the app's own code.
+      </p>
+      <p>
+        This matters most for tokens: the app splits a JWT and decodes its header and payload so you can read them. It does <strong>not</strong> verify the signature and does not contact any server to do so — the screen says as much while you are looking at it.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>4. No network use</h2>
-    <p>
-      The app makes no network requests. Everything — parsing, editing, searching,
-      converting and exporting — happens on your device, with or without an internet
-      connection. The only outbound links anywhere in the app are two entries in the
-      Help menu, pointing at the JSON specification and the JSONPath RFC; clicking one
-      opens your browser, and nothing is sent from the app either way.
-    </p>
-  </div>
+    <div class="card">
+      <h2><span class="n">03</span>Your settings</h2>
+      <p>
+        Your theme, text size, tree density, path notation, copying, indentation and parsing preferences are saved on your device in standard app preferences. The interface language is the system's own per-app language setting. These are technical settings: they contain nothing personal and never leave the device, apart from the device backups you make yourself.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>5. No analytics or tracking</h2>
-    <p>
-      There is no analytics framework, no crash-reporting service, no advertising
-      identifier, and no third-party code of any kind in the app. We do not know who
-      you are, whether you use the app, or what you open with it.
-    </p>
-  </div>
+    <div class="card">
+      <h2><span class="n">04</span>No network use</h2>
+      <p>
+        The app makes no network requests. Parsing, editing, searching, querying, converting and exporting happen on your device, with or without an internet connection. The only outbound links in the app are two entries in the Help menu, pointing at the JSON specification and the JSONPath RFC; clicking one opens your browser, and nothing is sent from the app either way.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>6. Children's privacy</h2>
-    <p>
-      The app collects no personal information from anyone, including children.
-    </p>
-  </div>
+    <div class="card">
+      <h2><span class="n">05</span>No analytics or tracking</h2>
+      <p>
+        There is no analytics framework, no crash-reporting service, no advertising identifier and no third-party code of any kind in the app. We do not know who you are, whether you use the app or what you open with it. If you choose to share crash reports with Apple in your device settings, Apple may make them available to developers in anonymous form under Apple's own privacy policy.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>7. Changes to this policy</h2>
-    <p>
-      If our practices ever change, we will update this page and revise the
-      "Last updated" date above.
-    </p>
-  </div>
+    <div class="card">
+      <h2><span class="n">06</span>Children's privacy</h2>
+      <p>The app collects no personal information from anyone, including children.</p>
+    </div>
 
-  <div class="card">
-    <h2>8. Contact</h2>
-    <p>
-      Questions about privacy or the app?<br />
-      <strong>Email:</strong>
-      <a href="mailto:volodymyr.sichka@gmail.com">volodymyr.sichka@gmail.com</a>
-    </p>
-  </div>
+    <div class="card">
+      <h2><span class="n">07</span>Changes to this policy</h2>
+      <p>If our practices ever change, we will update this page and revise the "Last updated" date above.</p>
+    </div>
 
-  <p class="footer-note">
-    Your data is yours. It never leaves your device.
-  </p>
+    <div class="card contact">
+      <h2>Questions?</h2>
+      <p>Write to us about privacy or anything else in the app.</p>
+      <a class="button" href="mailto:volodymyr.sichka@gmail.com">volodymyr.sichka@gmail.com</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Volodymyr Sichka. Your data is yours — it never leaves your device.</span>
+    <nav>
+      <a href="marketing.html">Overview</a>
+      <a href="support.html">Support</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="https://apps.apple.com/app/id6799075435">App Store</a>
+    </nav>
+  </footer>
 </body>
 
 </html>

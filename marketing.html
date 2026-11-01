@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JSON Master — JSON editor for iPhone, iPad and Mac</title>
+  <meta name="description" content="A fast, native JSON editor for iPhone, iPad and Mac: tree and source in sync, JSONPath queries, JWT decoding, structural compare, type generation and one-tap repair." />
+  <meta name="theme-color" content="#0e1016" />
+  <meta name="apple-itunes-app" content="app-id=6799075435" />
+  <meta property="og:title" content="JSON Master" />
+  <meta property="og:description" content="A fast, native JSON editor for iPhone, iPad and Mac." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/mac-hero.jpg" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <a class="brand" href="marketing.html"><img src="logo.png" alt="" /><span>JSON Master</span></a>
+    <nav class="nav-links">
+      <a href="marketing.html" aria-current="page">Overview</a>
+      <a href="support.html">Support</a>
+      <a href="privacy-policy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="icon" src="logo.png" alt="JSON Master app icon" />
+      <h1>JSON, <span class="accent">beautifully clear</span></h1>
+      <p class="lead">A fast, native JSON editor for iPhone, iPad and Mac — built around what you do with JSON all day: find a value, copy its path, and understand what it holds.</p>
+      <a class="badge" href="https://apps.apple.com/app/id6799075435">
+        <img src="https://tools.applemarketingtools.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="162" height="54" />
+      </a>
+      <p class="platforms">iPhone · iPad · Mac · Apple Vision Pro — in seven languages</p>
+      <div class="chips" aria-hidden="true">
+        <span class="chip"><b class="k">"id"</b>: <b class="s">"ord_8F2kQ"</b></span>
+        <span class="chip"><b class="k">$.data.orders[0].total</b></span>
+        <span class="chip"><b class="b">JWT</b> decoded</span>
+        <span class="chip"><b class="k">"total"</b>: <b class="n">887.90</b></span>
+        <span class="chip"><b class="ok">●</b> Valid JSON</span>
+      </div>
+    </section>
+
+    <div class="showcase">
+      <img src="images/mac-hero.jpg" alt="JSON Master on a MacBook: the tree, the highlighted source and the inspector side by side" width="1800" height="931" />
+    </div>
+
+    <section class="band">
+      <h2>Two views, <span class="accent">one file</span></h2>
+      <p class="lead">The tree is for reading and restructuring, the source for fixing what does not parse. Both are the same text, always in sync — and an untouched file is saved back byte for byte.</p>
+      <div class="gallery" tabindex="0" aria-label="iPhone screenshots">
+        <img src="images/iphone-01.jpg" alt="Tree view on iPhone" width="506" height="1100" loading="lazy" />
+        <img src="images/iphone-02.jpg" alt="Command palette jumping to a node by name" width="506" height="1100" loading="lazy" />
+        <img src="images/iphone-03.jpg" alt="Decoded JWT token" width="506" height="1100" loading="lazy" />
+        <img src="images/iphone-04.jpg" alt="JSONPath query with live results" width="506" height="1100" loading="lazy" />
+        <img src="images/iphone-05.jpg" alt="Structural comparison of two documents" width="506" height="1100" loading="lazy" />
+        <img src="images/iphone-06.jpg" alt="Swift Codable types generated from the document" width="506" height="1100" loading="lazy" />
+        <img src="images/iphone-07.jpg" alt="Repairing almost-JSON in one tap" width="506" height="1100" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="band">
+      <h2>Everything you do <span class="accent">with JSON</span></h2>
+      <p class="lead">No web view, no account, no network. Just the tools you reach for every day.</p>
+      <div class="features">
+        <div class="feature">
+          <span class="tag" style="color: var(--key)">⌘K</span>
+          <h3>Jump anywhere by name</h3>
+          <p>The command palette runs any command and fuzzy-jumps to any node: <code>adrcity</code> finds <code>customer.address.city</code>. Breadcrumbs, back and forward keep you oriented.</p>
+        </div>
+        <div class="feature">
+          <span class="tag" style="color: var(--string)">$.items[*].name</span>
+          <h3>Copy the path, any way</h3>
+          <p>Six notations — dot, JSONPath, brackets, jq, Swift and JSON Pointer — each one tap away. Copy values, whole branches, keys or key-value pairs.</p>
+        </div>
+        <div class="feature">
+          <span class="tag" style="color: var(--number)">1767225600</span>
+          <h3>Understand every value</h3>
+          <p>Unix timestamps, JWT tokens, base64, ISO 8601 dates and URLs are recognised and explained. Integers beyond 2<sup>53</sup> are flagged before JavaScript rounds them.</p>
+        </div>
+        <div class="feature">
+          <span class="tag" style="color: var(--boolean)">[?(@.type=='book')]</span>
+          <h3>Ask with JSONPath</h3>
+          <p>Keys, indices, slices, wildcards, recursive descent and conditions. Results update as you type, and each one jumps to its node.</p>
+        </div>
+        <div class="feature">
+          <span class="tag" style="color: var(--pink)">// trailing, commas,</span>
+          <h3>Fix almost-JSON</h3>
+          <p>Comments, trailing commas, single quotes and bare keys are rewritten as strict JSON in one undoable step. A broken file shows the exact line and column.</p>
+        </div>
+        <div class="feature">
+          <span class="tag" style="color: var(--success)">struct Order: Codable</span>
+          <h3>From JSON to code</h3>
+          <p>Swift <code>Codable</code>, TypeScript interfaces or JSON Schema, with optional fields inferred from the whole array — the thing most often missed by hand.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <h2>Room to work <span class="accent">on iPad and Mac</span></h2>
+      <p class="lead">Tree, source and inspector side by side, with full keyboard control.</p>
+
+      <div class="split">
+        <img src="images/ipad-03.jpg" alt="Decoding a JWT token on iPad" width="1600" height="1200" loading="lazy" />
+        <div>
+          <h3>Decode JWT tokens</h3>
+          <p>Header, claims and expiry, readable at a glance. The signature is not verified — and the app says so instead of pretending.</p>
+        </div>
+      </div>
+
+      <div class="split reverse">
+        <img src="images/ipad-05.jpg" alt="Comparing two documents on iPad" width="1600" height="1200" loading="lazy" />
+        <div>
+          <h3>Spot every change</h3>
+          <p>Compare against another file or the clipboard by structure, not by line breaks: reordered keys are not a difference, and reindenting does not mark the whole file as changed.</p>
+        </div>
+      </div>
+
+      <div class="split">
+        <img src="images/ipad-06.jpg" alt="Generating Swift types on iPad" width="1600" height="1200" loading="lazy" />
+        <div>
+          <h3>Types from real data</h3>
+          <p>Swift <code>Codable</code> with <code>CodingKeys</code> only where names differ, TypeScript interfaces or JSON Schema. And for the whole document: format and minify, sort keys, expand embedded JSON, remove empty values and duplicate keys, export to CSV.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <h2>Four themes, <span class="accent">your pick</span></h2>
+      <p class="lead">Switch live from Settings or the command palette. Data stays monospaced; the interface around it uses the system font.</p>
+      <div class="themes">
+        <div class="theme" style="background:#0e1016;color:#e4e7f0">
+          <span class="name">Midnight</span>
+          <span style="color:#a9b8ff">"status"</span>: <span style="color:#9fd37c">"shipped"</span><br />
+          <span style="color:#a9b8ff">"total"</span>: <span style="color:#ffa36c">887.9</span>
+        </div>
+        <div class="theme" style="background:#1b1b1d;color:#ececef">
+          <span class="name">Graphite</span>
+          <span style="color:#6fc3f7">"status"</span>: <span style="color:#ff7a6b">"shipped"</span><br />
+          <span style="color:#6fc3f7">"total"</span>: <span style="color:#d9c46e">887.9</span>
+        </div>
+        <div class="theme" style="background:#14110c;color:#efe0c0">
+          <span class="name" style="color:#ffb000">Amber CRT</span>
+          <span style="color:#ffc24d">"status"</span>: <span style="color:#93d66e">"shipped"</span><br />
+          <span style="color:#ffc24d">"total"</span>: <span style="color:#64c8e0">887.9</span>
+        </div>
+        <div class="theme" style="background:#fcfcfd;color:#1d2130">
+          <span class="name">Daylight</span>
+          <span style="color:#2a44b8">"status"</span>: <span style="color:#18793a">"shipped"</span><br />
+          <span style="color:#2a44b8">"total"</span>: <span style="color:#c24a0e">887.9</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="card highlight contact">
+        <h2>Your data never leaves your device</h2>
+        <p>No accounts, no analytics, no ads, no network requests. Documents are ordinary files in Files, iCloud Drive or Finder. Read the <a href="privacy-policy.html">privacy policy</a>.</p>
+      </div>
+    </section>
+
+    <section class="band cta">
+      <h2>Get <span class="accent">JSON Master</span></h2>
+      <p class="lead">English, German, French, Ukrainian, Spanish, Japanese and Portuguese. Requires iOS 18, iPadOS 18, macOS 15 or visionOS 2.</p>
+      <a class="badge" href="https://apps.apple.com/app/id6799075435">
+        <img src="https://tools.applemarketingtools.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="162" height="54" />
+      </a>
+      <p class="platforms">Questions? See <a href="support.html">Support</a>.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Volodymyr Sichka. Apple, the Apple logo, iPhone, iPad and Mac are trademarks of Apple Inc.</span>
+    <nav>
+      <a href="marketing.html">Overview</a>
+      <a href="support.html">Support</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="https://apps.apple.com/app/id6799075435">App Store</a>
+    </nav>
+  </footer>
+</body>
+
+</html>
