@@ -31,6 +31,7 @@
 
     <nav class="toc" aria-label="Sections">
       <a href="#basics">Basics</a>
+      <a href="#pro">JSON Master Pro</a>
       <a href="#finding">Finding your way</a>
       <a href="#copying">Copying</a>
       <a href="#editing">Editing and tools</a>
@@ -81,6 +82,64 @@
         <h2>Does it handle large files?</h2>
         <p>
           Anything over a megabyte is parsed in the background while the window shows how far it has got, so the app stays responsive. Huge arrays stay collapsed until you open them.
+        </p>
+      </div>
+    </section>
+
+    <section id="pro">
+      <p class="section-title">JSON Master Pro</p>
+
+      <div class="card">
+        <h2>What is free, and what needs Pro?</h2>
+        <p>
+          Everything you do with JSON every day is free: the tree and the source, search, the command palette, the inspector, copying, editing, format, minify, sort keys, repair, large files, decoding tokens, and the Midnight and Daylight themes.
+        </p>
+        <p><strong>JSON Master Pro</strong> adds the tools for deeper work:</p>
+        <ul>
+          <li><strong>Query</strong> — JSONPath with live results</li>
+          <li><strong>Compare</strong> — structural comparison against another file or the clipboard</li>
+          <li><strong>Generate types</strong> — Swift <code>Codable</code>, TypeScript interfaces and JSON Schema</li>
+          <li><strong>Summary</strong> — statistics and findings worth a look</li>
+          <li><strong>CSV export</strong></li>
+          <li>The <strong>Graphite</strong> and <strong>Amber CRT</strong> themes</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>How do I get Pro, and what does it cost?</h2>
+        <p>
+          Open any Pro tool and the purchase screen appears in its place; after the purchase the tool opens right there. You can also choose <strong>Unlock Pro</strong> in the <strong>"…"</strong> menu or the command palette, or open <strong>JSON Master Pro</strong> in Settings — at the top on iPhone and iPad, under General on Mac.
+        </p>
+        <p>
+          It is a single in-app purchase, not a subscription: you pay once and keep it. The price is shown on the purchase screen in your own currency.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Do I have to buy it again on my other devices?</h2>
+        <p>
+          No. One purchase unlocks Pro on your iPhone, iPad and Mac, as long as they are signed in to the App Store with the same Apple Account. If Pro does not show up on a device, open the purchase screen and tap <strong>Restore purchase</strong>. Family Sharing is not available for this purchase.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>I bought Pro, but the tools are still locked</h2>
+        <p>
+          Open the purchase screen and tap <strong>Restore purchase</strong>. The app checks the purchase with the App Store, so this needs an internet connection and the same Apple Account you bought with. If the purchase is still pending — for example waiting for approval through Ask to Buy — Pro unlocks as soon as it is approved. If nothing helps, write to us.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Why does the app show Midnight instead of my theme?</h2>
+        <p>
+          Graphite and Amber CRT are part of JSON Master Pro. Without Pro the app shows Midnight, but it remembers the theme you chose: once Pro is unlocked or restored, your theme comes back by itself.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>How do I get a refund?</h2>
+        <p>
+          Purchases are made through Apple, so refunds are too: request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. We cannot issue refunds ourselves, because we never see your payment.
         </p>
       </div>
     </section>
@@ -166,17 +225,17 @@
           In the <strong>"…"</strong> menu. Its <strong>Document</strong> section holds Format, Minify, Sort keys (A → Z or Z → A, recursively; array order is never touched), Expand embedded JSON, Remove empty values and Remove duplicate keys — plus <strong>Convert JSON Lines into an array</strong>, which appears only when the text is JSON Lines.
         </p>
         <p>
-          <strong>Tools</strong> holds Query, Summary, Compare, Generate types and Decode a token. On Mac they have their own toolbar button and are also in the JSON menu; on iPhone and iPad they are a section of the <strong>"…"</strong> menu.
+          <strong>Tools</strong> holds Query, Summary, Compare, Generate types and Decode a token. On Mac they have their own toolbar button and are also in the JSON menu; on iPhone and iPad they are a section of the <strong>"…"</strong> menu. Query, Summary, Compare and Generate types are part of <a href="#pro">JSON Master Pro</a>; decoding a token is free.
         </p>
       </div>
 
       <div class="card">
         <h2>What can the tools do?</h2>
         <ul>
-          <li><strong>Query</strong> — JSONPath with keys, indices, slices, <code>[*]</code>, recursive <code>..</code> and conditions such as <code>[?(@.type=='book')]</code>. Results update as you type; tap one to jump to it.</li>
-          <li><strong>Summary</strong> — node and key counts, depth, size and types, plus findings worth a look: duplicate keys, unsafe integers, strings holding JSON. Each one jumps to its node.</li>
-          <li><strong>Compare</strong> — against another file or the clipboard, by structure: reordered keys are not a difference, and reindentation does not mark the whole file as changed.</li>
-          <li><strong>Generate types</strong> — Swift <code>Codable</code>, TypeScript interfaces or JSON Schema. Fields missing from some array elements become optional.</li>
+          <li><strong>Query</strong><span class="pro">PRO</span> — JSONPath with keys, indices, slices, <code>[*]</code>, recursive <code>..</code> and conditions such as <code>[?(@.type=='book')]</code>. Results update as you type; tap one to jump to it.</li>
+          <li><strong>Summary</strong><span class="pro">PRO</span> — node and key counts, depth, size and types, plus findings worth a look: duplicate keys, unsafe integers, strings holding JSON. Each one jumps to its node.</li>
+          <li><strong>Compare</strong><span class="pro">PRO</span> — against another file or the clipboard, by structure: reordered keys are not a difference, and reindentation does not mark the whole file as changed.</li>
+          <li><strong>Generate types</strong><span class="pro">PRO</span> — Swift <code>Codable</code>, TypeScript interfaces or JSON Schema. Fields missing from some array elements become optional.</li>
           <li><strong>Decode a token</strong> — paste a JWT and read its header and payload as JSON.</li>
         </ul>
       </div>
@@ -226,7 +285,7 @@
       <div class="card">
         <h2>How do I get the document out?</h2>
         <p>
-          <strong>Export</strong> in the <strong>"…"</strong> menu writes formatted JSON, minified JSON or a CSV table; <strong>Copy the whole document</strong> next to it puts the text on the clipboard. CSV needs an array of objects: nested objects become <code>address.city</code> columns and arrays stay as JSON in the cell. If the shape is not a table, the app says so instead of inventing columns.
+          <strong>Export</strong> in the <strong>"…"</strong> menu writes formatted JSON, minified JSON or a CSV table; <strong>Copy the whole document</strong> next to it puts the text on the clipboard. CSV export is part of <a href="#pro">JSON Master Pro</a> and needs an array of objects: nested objects become <code>address.city</code> columns and arrays stay as JSON in the cell. If the shape is not a table, the app says so instead of inventing columns.
         </p>
       </div>
     </section>
@@ -240,6 +299,7 @@
           On Mac, <kbd>⌘,</kbd> or the JSON Master menu; on iPhone and iPad, at the bottom of the <strong>"…"</strong> menu.
         </p>
         <ul>
+          <li><strong>JSON Master Pro</strong> — what Pro includes, the purchase and Restore purchase. At the top on iPhone and iPad, under General on Mac.</li>
           <li><strong>General</strong> — interface language and how many tree levels a document opens with.</li>
           <li><strong>Appearance</strong> — theme, text size (9–22 pt), tree density, type icons, item counts, indent guides and previews of collapsed objects, with a live preview.</li>
           <li><strong>Editing</strong> — indentation (2 spaces, 4 spaces or a tab), escaping non-ASCII as <code>\u</code>, and lenient parsing.</li>
@@ -250,7 +310,7 @@
       <div class="card">
         <h2>Can I change the look?</h2>
         <p>
-          There are four themes: <strong>Midnight</strong> (the default, deep blue-black with a periwinkle accent), <strong>Graphite</strong> (neutral grey and system blue), <strong>Amber CRT</strong> (the original phosphor look) and <strong>Daylight</strong>, a light theme for bright rooms and projectors. Switch in Settings → Appearance or from the command palette; the change is immediate. Themes do not follow the system appearance on purpose: the one you pick is the one you get, window chrome included.
+          There are four themes: <strong>Midnight</strong> (the default, deep blue-black with a periwinkle accent), <strong>Graphite</strong> (neutral grey and system blue), <strong>Amber CRT</strong> (the original phosphor look) and <strong>Daylight</strong>, a light theme for bright rooms and projectors. Midnight and Daylight are free; Graphite and Amber CRT come with <a href="#pro">JSON Master Pro</a>. Switch in Settings → Appearance or from the command palette; the change is immediate. Themes do not follow the system appearance on purpose: the one you pick is the one you get, window chrome included.
         </p>
       </div>
 
@@ -263,7 +323,7 @@
 
       <div class="card">
         <h2>Does it need an internet connection?</h2>
-        <p>No. The app works entirely offline and makes no network requests at all. See the <a href="privacy-policy.html">privacy policy</a>.</p>
+        <p>No. The editor and every tool work entirely offline. Only buying or restoring JSON Master Pro needs a connection, because the App Store checks the purchase; nothing from your documents is ever sent. See the <a href="privacy-policy.html">privacy policy</a>.</p>
       </div>
 
       <div class="card">
